@@ -1,11 +1,11 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: note_ui
+  name: note-ui
 spec:
   to:
     kind: Service
-    name: note_ui
+    name: note-ui
   port:
     targetPort: 80
   tls:

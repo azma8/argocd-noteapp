@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: note_ui
+  name: note-ui
 spec:
   selector:
-    app: note_ui
+    app: note-ui
   ports:
     - port: 80
       targetPort: 4173

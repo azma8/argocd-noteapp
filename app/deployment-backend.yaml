@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: note_api
+  name: note-api
   labels:
-    app: note_api
+    app: note-api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: note_api
+      app: note-api
   template:
     metadata:
       labels:
-        app: note_api
+        app: note-api
     spec:
       containers:
-        - name: note_api
+        - name: note-api
           image: docker.io/pratama84/note_api:latest  # ganti username Docker Hub lu
           ports:
             - containerPort: 3000
           envFrom:
             - configMapRef:
-                name: note_api-config
+                name: note-api-config

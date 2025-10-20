@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: note_ui
+  name: note-ui
   labels:
-    app: note_ui
+    app: note-ui
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: note_ui
+      app: note-ui
   template:
     metadata:
       labels:
-        app: note_ui
+        app: note-ui
     spec:
       containers:
-        - name: note_ui
+        - name: note-ui
           image: docker.io/pratama84/note_ui:latest  # ganti username Docker Hub lu
           ports:
             - containerPort: 80
           env:
             - name: VITE_NOTE_API_URL
-              value: "http://note_api-note-app.apps.dev.mibocp.co.id:3000/"
+              value: "http://note-api-note-app.apps.dev.mibocp.co.id:3000/"
