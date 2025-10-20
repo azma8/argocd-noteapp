@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: my-fullstack-app
+  name: full-app
   namespace: openshift-gitops
   annotations:
     argocd-image-updater.argoproj.io/backend.image-name: docker.io/pratama84/note_api
