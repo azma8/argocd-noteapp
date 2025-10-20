@@ -21,4 +21,4 @@ spec:
             - containerPort: 80
           env:
             - name: VITE_NOTE_API_URL
-              value: "http://note-api-note-app.apps.dev.mibocp.co.id:3000/"
+              value: "http://note-api-note-app.apps.dev.mibocp.co.id:3000/note"
