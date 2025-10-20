@@ -1,0 +1,12 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: note_ui
+spec:
+  to:
+    kind: Service
+    name: note_ui
+  port:
+    targetPort: 80
+  tls:
+    termination: edge

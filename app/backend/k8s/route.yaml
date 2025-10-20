@@ -1,0 +1,10 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: note_api
+spec:
+  to:
+    kind: Service
+    name: note_api
+  port:
+    targetPort: 3000

@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: note_api-config
+data:
+  HOST_DB: mysql
+  USER_DB: root
+  PASS_DB: root
+  DATABASE_NAME: myappdb
