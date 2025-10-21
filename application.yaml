@@ -6,8 +6,10 @@ metadata:
   annotations:
     argocd-image-updater.argoproj.io/backend.image-name: docker.io/pratama84/note_api
     argocd-image-updater.argoproj.io/backend.update-strategy: latest
+    argocd-image-updater.argoproj.io/backend.force-update: "true"
     argocd-image-updater.argoproj.io/frontend.image-name: docker.io/pratama84/note_ui
     argocd-image-updater.argoproj.io/frontend.update-strategy: latest
+    argocd-image-updater.argoproj.io/frontend.force-update: "true"
 spec:
   project: default
   source:
@@ -23,4 +25,5 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
+
 
