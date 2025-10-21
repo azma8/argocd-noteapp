@@ -6,6 +6,6 @@ spec:
   selector:
     app: note-ui
   ports:
-    - port: 80
+    - port: 4173
       targetPort: 4173
   type: ClusterIP

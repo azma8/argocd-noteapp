@@ -18,7 +18,7 @@ spec:
         - name: note-ui
           image: docker.io/pratama84/note_ui:latest  # ganti username Docker Hub lu
           ports:
-            - containerPort: 80
+            - containerPort: 4173
           env:
             - name: VITE_NOTE_API_URL
-              value: "http://note-api-note-app.apps.dev.mibocp.co.id:3000/note"
+              value: "http://note-api-note-app.apps.dev.mibocp.co.id/note"

@@ -7,6 +7,6 @@ spec:
     kind: Service
     name: note-ui
   port:
-    targetPort: 80
+    targetPort: 4173
   tls:
     termination: edge
