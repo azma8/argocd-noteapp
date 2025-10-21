@@ -8,5 +8,4 @@ spec:
     name: note-ui
   port:
     targetPort: 4173
-  tls:
-    termination: edge
+
