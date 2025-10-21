@@ -4,14 +4,15 @@ metadata:
   name: full-app
   namespace: openshift-gitops
   annotations:
-    argocd-image-updater.argoproj.io/image-list: backend=docker.io/pratama84/note_api:latest,frontend=docker.io/pratama84/note_ui:latest
+    argocd-image-updater.argoproj.io/image-list: note-api=docker.io/pratama84/note_api:latest,note-ui=docker.io/pratama84/note_ui:latest
     argocd-image-updater.argoproj.io/write-back-method: argocd
-    argocd-image-updater.argoproj.io/backend.image-name: docker.io/pratama84/note_api
-    argocd-image-updater.argoproj.io/backend.update-strategy: latest
-    argocd-image-updater.argoproj.io/backend.force-update: "true"
-    argocd-image-updater.argoproj.io/frontend.image-name: docker.io/pratama84/note_ui
-    argocd-image-updater.argoproj.io/frontend.update-strategy: latest
-    argocd-image-updater.argoproj.io/frontend.force-update: "true"
+    argocd-image-updater.argoproj.io/note-api.image-name: docker.io/pratama84/note_api
+    argocd-image-updater.argoproj.io/note-api.update-strategy: latest
+    argocd-image-updater.argoproj.io/note-api.force-update: "true"
+    argocd-image-updater.argoproj.io/note-ui.image-name: docker.io/pratama84/note_ui
+    argocd-image-updater.argoproj.io/note-ui.update-strategy: latest
+    argocd-image-updater.argoproj.io/note-ui.force-update: "true"
+    argocd-image-updater.argoproj.io/write-back-target: spec
 spec:
   project: default
   source:
