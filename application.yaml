@@ -4,6 +4,7 @@ metadata:
   name: full-app
   namespace: openshift-gitops
   annotations:
+    argocd-image-updater.argoproj.io/image-list: backend=docker.io/pratama84/note_api:latest,frontend=docker.io/pratama84/note_ui:latest
     argocd-image-updater.argoproj.io/backend.image-name: docker.io/pratama84/note_api
     argocd-image-updater.argoproj.io/backend.update-strategy: latest
     argocd-image-updater.argoproj.io/backend.force-update: "true"
